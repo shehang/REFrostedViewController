@@ -124,7 +124,7 @@
     
     if (contentViewController) {
         [self addChildViewController:contentViewController];
-        contentViewController.view.frame = self.containerViewController.view.frame;
+        contentViewController.view.frame = self.containerViewController.view.bounds;
         [self.view insertSubview:contentViewController.view atIndex:0];
         [contentViewController didMoveToParentViewController:self];
     }
